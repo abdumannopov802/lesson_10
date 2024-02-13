@@ -13,9 +13,9 @@
         </ul>  
         <div class="header-content">
             <h4 class="header-subtitle" >Hello, I am</h4>
-            <h1 class="header-title">John Doe</h1>
-            <h6 class="header-mono" >Frond end Designer | Developer</h6>
-            <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+            <h1 class="header-title">Akrom Abdumannopov</h1>
+            <h6 class="header-mono" >| Back end Developer | </h6>
+            <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume <a href="resume.html" download></a></button>
         </div>
     </div>
 </header>
@@ -27,13 +27,13 @@
         <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="{% url 'about' %}" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#resume" class="nav-link">Resume</a>
+                    <a href="{% url 'resume' %}" class="nav-link">Resume</a>
                 </li>
             </ul>
             <ul class="navbar-nav brand">
@@ -45,13 +45,13 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="{% url 'portfolio' %}" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="{% url 'blog' %}" class="nav-link">Blog</a>
                 </li>
                 <li class="nav-item last-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="{% url 'contact' %}" class="nav-link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -70,11 +70,11 @@
             <h3 class="font-weight-light">Personal Info</h3>
             <span class="line mb-5"></span>
             <ul class="mt40 info list-unstyled">
-                <li><span>Birthdate</span> : 09/13/1996</li>
-                <li><span>Email</span> : info@website.com</li>
-                <li><span>Phone</span> : + (123) 456-7890</li>
-                <li><span>Skype</span> : John_Doe </li>
-                <li><span>Address</span> :  12345 Fake ST NoWhere AB Country.</li>
+                <li><span>Birthdate</span> : 02/07/2005</li>
+                <li><span>Email</span> : akrom_abdumannopov_@gmail.com</li>
+                <li><span>Phone</span> : +(998) 97 800-91-41</li>
+                <li><span>Skype</span> : Akrom_Abdumannopov </li>
+                <li><span>Address</span> :  Fake Street 123 Tashkent </li>
             </ul>
             <ul class="social-icons pt-3">
                 <li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
@@ -115,4 +115,54 @@
     </div>
 </div>
 
+<section class="section bg-dark text-center">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="row ">
+                    <div class="col-5 text-right text-light border-right py-3">
+                        <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                    </div>
+                    <div class="col-7 text-left py-3">
+                        <h1 class="text-danger font-weight-bold font40">500</h1>
+                        <p class="text-light mb-1">Hours Worked</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="row">
+                    <div class="col-5 text-right text-light border-right py-3">
+                        <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+                    </div>
+                    <div class="col-7 text-left py-3">
+                        <h1 class="text-danger font-weight-bold font40">50K</h1>
+                        <p class="text-light mb-1">Project Finished</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="row">
+                    <div class="col-5 text-right text-light border-right py-3">
+                        <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+                    </div>
+                    <div class="col-7 text-left py-3">
+                        <h1 class="text-danger font-weight-bold font40">200K</h1>
+                        <p class="text-light mb-1">Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="row">
+                    <div class="col-5 text-right text-light border-right py-3">
+                        <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
+                    </div>
+                    <div class="col-7 text-left py-3">
+                        <h1 class="text-danger font-weight-bold font40">2k</h1>
+                        <p class="text-light mb-1">Coffee Drinked</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock content %}
